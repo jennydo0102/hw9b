@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Sample Form</h1>
+	<form id="myForm">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+
+		<label>Payment type:</label><br>
+		<input type="radio" id="cash" name="payment" value="Cash" required>
+      <label for="cash">Cash</label><br>
+
+      <input type="radio" id="creditCard" name="payment" value="Credit Card" required>
+      <label for="creditCard">Credit Card</label><br>
+
+      <input type="radio" id="googlePay" name="payment" value="Google Pay" required>
+      <label for="googlePay">Google Pay</label><br>
+
+      <input type="radio" id="applePay" name="payment" value="Apple Pay" required>
+      <label for="applePay">Apple Pay</label><br>
+
+	<label for="promotion">Sign me up for special promotion:</label>
+    <input type="checkbox" id="promotion" name="promotion"><br>
+
+    <label for="location">Preferred Location:</label>
+    <select id="location" name="location" required>
+      <option value="">Select a location</option>
+      <option value="Los Angeles">Los Angeles</option>
+      <option value="Orange County">Orange County</option>
+      <option value="Riverside">Riverside</option>
+      <option value="San Diego">San Diego</option>
+    </select><br>
+		<input type="button" value="Submit" onclick="displayFormData()">
+		<input type="reset" value="Cancel">
+	</form>
+	<div id="formData"></div>
+    
+    <a href="../index.html">Link to Start Page</a>
+
+    <script src="../js/ex4.js"></script>
+</body>
+</html>
